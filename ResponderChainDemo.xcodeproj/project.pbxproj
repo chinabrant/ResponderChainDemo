@@ -13,6 +13,9 @@
 		945931591FE9FA4E008073BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945931581FE9FA4E008073BE /* Assets.xcassets */; };
 		9459315C1FE9FA4E008073BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9459315A1FE9FA4E008073BE /* LaunchScreen.storyboard */; };
 		9459315F1FE9FA4E008073BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9459315E1FE9FA4E008073BE /* main.m */; };
+		945931671FE9FB31008073BE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945931661FE9FB31008073BE /* TableViewController.m */; };
+		9459316A1FE9FC04008073BE /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 945931691FE9FC04008073BE /* UIResponder+Router.m */; };
+		9459316D1FE9FDE5008073BE /* EventProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9459316C1FE9FDE5008073BE /* EventProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		9459315B1FE9FA4E008073BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9459315D1FE9FA4E008073BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9459315E1FE9FA4E008073BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		945931651FE9FB31008073BE /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		945931661FE9FB31008073BE /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		945931681FE9FC04008073BE /* UIResponder+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		945931691FE9FC04008073BE /* UIResponder+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		9459316B1FE9FDE5008073BE /* EventProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventProxy.h; sourceTree = "<group>"; };
+		9459316C1FE9FDE5008073BE /* EventProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				9459315A1FE9FA4E008073BE /* LaunchScreen.storyboard */,
 				9459315D1FE9FA4E008073BE /* Info.plist */,
 				9459315E1FE9FA4E008073BE /* main.m */,
+				945931651FE9FB31008073BE /* TableViewController.h */,
+				945931661FE9FB31008073BE /* TableViewController.m */,
+				945931681FE9FC04008073BE /* UIResponder+Router.h */,
+				945931691FE9FC04008073BE /* UIResponder+Router.m */,
+				9459316B1FE9FDE5008073BE /* EventProxy.h */,
+				9459316C1FE9FDE5008073BE /* EventProxy.m */,
 			);
 			path = ResponderChainDemo;
 			sourceTree = "<group>";
@@ -143,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				945931541FE9FA4E008073BE /* ViewController.m in Sources */,
+				9459316A1FE9FC04008073BE /* UIResponder+Router.m in Sources */,
 				9459315F1FE9FA4E008073BE /* main.m in Sources */,
 				945931511FE9FA4E008073BE /* AppDelegate.m in Sources */,
+				945931671FE9FB31008073BE /* TableViewController.m in Sources */,
+				9459316D1FE9FDE5008073BE /* EventProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

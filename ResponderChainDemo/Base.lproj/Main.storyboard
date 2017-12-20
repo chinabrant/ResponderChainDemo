@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ZU-SY-6O2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,130 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tsr-h0-2sR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="JN9-Xr-Vuq">
+            <objects>
+                <tableViewController id="VIm-3r-LdX" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m37-Dq-kfx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="LdS-mf-eQn">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fNG-jR-uD6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fNG-jR-uD6" id="K7b-Gc-WBD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCj-lR-As6">
+                                                    <rect key="frame" x="12" y="5" width="351" height="33.5"/>
+                                                    <state key="normal" title="事件传递"/>
+                                                    <connections>
+                                                        <action selector="first:" destination="VIm-3r-LdX" eventType="touchUpInside" id="6gw-T1-HgC"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="MCj-lR-As6" secondAttribute="bottom" constant="5" id="49O-Q7-oHy"/>
+                                                <constraint firstItem="MCj-lR-As6" firstAttribute="leading" secondItem="K7b-Gc-WBD" secondAttribute="leading" constant="12" id="ZtM-zH-xyd"/>
+                                                <constraint firstItem="MCj-lR-As6" firstAttribute="top" secondItem="K7b-Gc-WBD" secondAttribute="top" constant="5" id="kuj-kL-MOL"/>
+                                                <constraint firstAttribute="trailing" secondItem="MCj-lR-As6" secondAttribute="trailing" constant="12" id="mB5-SH-yCl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8SP-hz-B8s">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8SP-hz-B8s" id="APr-Nm-lfV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAN-bl-utb">
+                                                    <rect key="frame" x="12" y="5" width="351" height="33.5"/>
+                                                    <state key="normal" title="事件传递"/>
+                                                    <connections>
+                                                        <action selector="second:" destination="VIm-3r-LdX" eventType="touchUpInside" id="ZVL-Pa-4Yi"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iAN-bl-utb" firstAttribute="top" secondItem="APr-Nm-lfV" secondAttribute="top" constant="5" id="G6N-fX-mkH"/>
+                                                <constraint firstAttribute="trailing" secondItem="iAN-bl-utb" secondAttribute="trailing" constant="12" id="KO0-dV-oE6"/>
+                                                <constraint firstItem="iAN-bl-utb" firstAttribute="leading" secondItem="APr-Nm-lfV" secondAttribute="leading" constant="12" id="RUv-G7-GsI"/>
+                                                <constraint firstAttribute="bottom" secondItem="iAN-bl-utb" secondAttribute="bottom" constant="5" id="iZO-bd-Y7u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PcN-nw-KT4">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PcN-nw-KT4" id="FqO-Ow-CfM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-oh-4BV">
+                                                    <rect key="frame" x="12" y="5" width="351" height="33.5"/>
+                                                    <state key="normal" title="事件传递"/>
+                                                    <connections>
+                                                        <action selector="third:" destination="VIm-3r-LdX" eventType="touchUpInside" id="XAO-ux-hIR"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eNP-oh-4BV" firstAttribute="top" secondItem="FqO-Ow-CfM" secondAttribute="top" constant="5" id="7rI-NK-h24"/>
+                                                <constraint firstAttribute="trailing" secondItem="eNP-oh-4BV" secondAttribute="trailing" constant="12" id="7uC-qp-6yq"/>
+                                                <constraint firstItem="eNP-oh-4BV" firstAttribute="leading" secondItem="FqO-Ow-CfM" secondAttribute="leading" constant="12" id="D3H-cl-9zd"/>
+                                                <constraint firstAttribute="bottom" secondItem="eNP-oh-4BV" secondAttribute="bottom" constant="5" id="WlK-Mc-Whd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="VIm-3r-LdX" id="Hbq-o8-Mic"/>
+                            <outlet property="delegate" destination="VIm-3r-LdX" id="iDn-fT-eiU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="JOg-38-U5x"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXV-nZ-hQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z16-CB-XiE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6ZU-SY-6O2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D7H-gy-4P0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VIm-3r-LdX" kind="relationship" relationship="rootViewController" id="0Ng-0Z-N2O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQy-3P-sCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="118"/>
         </scene>
     </scenes>
 </document>
